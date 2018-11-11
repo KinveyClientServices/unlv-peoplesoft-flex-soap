@@ -1,6 +1,16 @@
 # UNLV PeopleSoft Flex Connector
 Flex connector to UNLV's PeopleSoft SOAP service (https://css-tst.unlv.nevada.edu/PSIGW/PeopleSoftServiceListeningConnector/CI_UNLAUTH_BASIC.1.wsdl)
 
+# Prerequisites
+Install the Kinvey Flex CLI (https://devcenter.kinvey.com/nativescript/guides/flex-services#installation).
+Install the NPM Soap module (https://www.npmjs.com/package/soap#install)
+
+# Test Locally
+Follow this tutorial (https://www.progress.com/blogs/developing-and-testing-of-kinvey-flex-services-the-easier-way).  Choose the FlexData approach, creating a collection, and then mapping the collection to the established data service.
+
+# Deploy on Flex Service Runtime
+To deploy on FlexService Runtime, create a flex profile if none exists.  Use the flex profile, log in to the new profile, and then initialize the Node.JS project as a flex service.  You will be walked through steps to determine which FSR Service to map the microservice to.  After the microservice is mapped to the correct FSR service, you should see UNLV_People_Soft under the FlexData Service Objects menu.  Now, you can map a collection to use this data service. 
+
 # Using the PeopleSoft Flex Connector
 This Flex connector is a Kinvey FlexData service (https://devcenter.kinvey.com/nativescript/guides/flex-services#flex-data).
 There is one service object, registered as "UNLV_People_Soft".  The service object has one 
