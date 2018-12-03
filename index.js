@@ -10,8 +10,11 @@ sdk.service((err, flex) => {
 
   handlers.initHandler(flex.logger);
 
-  const data = flex.data;   // gets the datalink object from the service
+  const data = flex.data;   // gets the datalink object from the service  
   const peopleSoftFlex = data.serviceObject('UNLV_People_Soft');
+
+  const flexAuth = flex.auth; 
+  flexAuth.register('peopleSoftAuth', handlers.authHandler);
 
   // wire up the events that we want to process
   peopleSoftFlex.onGetByQuery(handlers.fetchHandler);
