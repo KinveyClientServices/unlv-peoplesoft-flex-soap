@@ -14,7 +14,7 @@
 
 module.exports = {
     peopleSoft: {
-        connectionUrl: 'https://css-tst.unlv.nevada.edu/PSIGW/PeopleSoftServiceListeningConnector/CI_UNLAUTH_BASIC.1.wsdl',
+        connectionUrl: 'https://my92.tst.unlv.nevada.edu/PSIGW/PeopleSoftServiceListeningConnector/CI_UNLAUTH_BASIC.1.wsdl',
         UNLAuth: {
             UNL_FIELD1:'1000195910',
             UNL_FIELD2:'123unlv!',
