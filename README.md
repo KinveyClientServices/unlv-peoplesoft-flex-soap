@@ -30,3 +30,7 @@ The JSON object should contain the following keys to have the following structur
   "UNL_APP_TYPE":"ITTEST",
   "UNL_KEY":"MYTEST"
 }
+
+# Using the PeopleSoft FlexAuth Service
+
+The FlexAuth service is designed to allow clients to authorize through PeopleSoft.  When authenticating from a client application, it is assumed that UNL_FIELD1 represents the username, and UNL_FIELD2 represents the password.
